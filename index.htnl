@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERAS | DEV-MODE</title>
+    <style>
+        :root { --neon: #00f2ff; --bg: #0a0a0a; }
+        body {
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .box {
+            border: 1px solid var(--neon);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+            background: rgba(255, 255, 255, 0.02);
+            transition: 0.3s;
+        }
+        .box:hover { box-shadow: 0 0 40px var(--neon); }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--neon);
+            text-shadow: 0 0 10px var(--neon);
+        }
+        .status {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px 15px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            color: #0f0;
+        }
+        .blink { animation: blink 1.5s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="status"><span class="blink">●</span> نظام التشغيل: TERMUX-ACTIVE</div>
+        <h1>FERAS DEV</h1>
+        <p>مرحباً بك في المنطقة البرمجية الخاصة بي.</p>
+        <p style="color: #666;">تم الرفع بنجاح عبر GitHub CLI</p>
+    </div>
+</body>
+</html>
+
+
+
